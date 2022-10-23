@@ -1,0 +1,15 @@
+[
+    {
+      "name":"Brosse à dent de luxe",
+      "price":10
+    },
+    {
+      "name":"Smartphone",
+      "price":1000
+    },
+    {
+      "name":"Ordi",
+      "price":1200,
+      "discount":"20%"
+    }
+  ]

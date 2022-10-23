@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { userList } from './userList';
+import { productList } from './productList';
+
 @Injectable({
   providedIn: 'root'
 })
-export class UserListService {
+export class ProductListService {
+
   constructor(private http:HttpClient) { }
   getConfig(){
-    return this.http.get<userList>('./assets/users.json')
+    return this.http.get<productList>('./assets/products.json')
   }
 }

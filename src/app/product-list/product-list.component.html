@@ -1,4 +1,4 @@
 <h2>Liste de produits :</h2>
-<div *ngFor="let Item of data">
+<div *ngFor="let Item of (productList| async)">
     <product [productItem]="Item"> </product>
 </div >

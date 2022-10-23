@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
-import { userList } from '../user';
+import { userList } from '../userList';
 import { UserListService } from '../user-list.service';
 
 @Component({
