@@ -10,13 +10,17 @@ import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 import { ConfigComponent } from './config/config.component';
+import { OrderComponent } from './order/order.component';
+import { OrderListComponent } from './order-list/order-list.component';
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ProductComponent,
     FormComponent,
-    ConfigComponent
+    ConfigComponent,
+    OrderComponent,
+    OrderListComponent
   ],
   imports: [
     BrowserModule,

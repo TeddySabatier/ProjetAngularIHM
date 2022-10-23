@@ -1,0 +1,15 @@
+[
+    {"user":"Jean",
+    "productList":[
+        {"name":"Brosse à dent","price":10},
+        {"name":"Shampoing","price":110},
+        {"name":"Savon de marseille","price":50}],
+    "date":"2022-10-12"},
+    
+    {"user":"Frak",
+    "productList":[
+        {"name":"Brosse à dent","price":10},
+        {"name":"Shampoing","price":110},
+        {"name":"Savon de marseille","price":50}],
+    "date":"2022-10-12"}
+]
