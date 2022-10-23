@@ -12,6 +12,8 @@ import {HttpClientModule} from '@angular/common/http'
 import { ConfigComponent } from './config/config.component';
 import { OrderComponent } from './order/order.component';
 import { OrderListComponent } from './order-list/order-list.component';
+import { UserComponent } from './user/user.component';
+import { UserListComponent } from './user-list/user-list.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { OrderListComponent } from './order-list/order-list.component';
     FormComponent,
     ConfigComponent,
     OrderComponent,
-    OrderListComponent
+    OrderListComponent,
+    UserComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
