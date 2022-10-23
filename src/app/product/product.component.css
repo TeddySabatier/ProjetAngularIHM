@@ -1,0 +1,26 @@
+hr{
+    height: 5px;
+    background-color: #3f87a6;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: #f69d3c;
+}
+div{
+    background: linear-gradient(0.25turn, #3f87a6 5%, #ebf8e1 50%, #f69d3c 95%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.discount{
+    font-size: larger;
+    background-color: black;
+    font-weight: bold;
+    color: red;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.discount:hover{
+    transform: rotate3d(1,0,1,40deg);
+}

@@ -1,0 +1,16 @@
+div{
+    display: flex;
+    justify-content:space-between;
+    margin: 2px;
+}
+.error{
+    color:red;
+}
+.valid{
+    color:green;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}

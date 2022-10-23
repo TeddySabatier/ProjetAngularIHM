@@ -1,0 +1,20 @@
+<div class="column">
+    <div *ngIf="hasError" class="error">
+        Error in form validation
+    </div>
+    <div *ngIf="isValid" class="valid">
+        That's a great Job
+    </div>
+    <div>
+        Login :<input type="text" [(ngModel)]="login"/>
+    </div>
+    <div>
+        Password :<input type="text" [(ngModel)]="password"/>
+    </div>
+    <div>
+        Confirm password :<input type="text" [(ngModel)]="confirmPassword"/>
+    </div>
+    <div>
+        <button (click)="onClickValidate()"> Validate</button>
+    </div>
+</div>

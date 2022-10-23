@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<div class="row">
+  <p>{{message}}</p>
+</div>
+<app-form></app-form>
+<nav>
+  <ul>
+    <li> <a routerLink='/counter' routerLinkActive='active'> Counter</a></li>
+    <li> <a routerLink='/productlist' routerLinkActive='active'> Product list</a></li>
+    <li> <a routerLink='/config' routerLinkActive='active'>Config</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
