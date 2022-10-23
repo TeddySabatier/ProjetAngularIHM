@@ -1,4 +1,17 @@
-<p>{{orderItem.user}}</p>
-<div *ngFor="let Item of orderItem.productList">
-    <product [productItem]="Item"> </product>
-</div >
+<div class="card col-span-2 xl:col-span-1 mt-5 mb-10">
+  <div class="card-header flex flex-row justify-between">
+    <div class="flex flex-row justify-center items-center">
+      <div class="w-8 h-8 overflow-hidden rounded-full ml-3">
+        <img src={{orderItem.img}} class="object-cover">
+      </div>
+      <h1 class="h6">{{orderItem.user}}</h1>
+    </div>
+  </div>
+  <!-- grid of products -->
+  <div class=" bg-gray-100 p-10">
+      <div product [productItem]="Item" *ngFor="let Item of orderItem.productList">
+
+      </div>
+  </div>
+  <p class="capitalize text-xs text-gray-500 ml-2">Recu le <span>{{orderItem.date}}</span></p>
+</div>

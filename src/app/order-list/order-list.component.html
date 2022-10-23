@@ -1,3 +1,25 @@
-<div *ngFor="let Item of (orderList| async)">
-    <app-order [orderItem]="Item"> </app-order>
-</div >
+<app-navbar></app-navbar>
+<!-- strat wrapper -->
+<div class="h-screen flex flex-row flex-wrap">
+  <!-- end sidbar -->
+  <!-- start content -->
+  <div class="bg-gray-100 flex-1 p-6 md:mt-16">
+    <div class="card col-span-2 xl:col-span-1 mt-10 mb-10">
+      <div class="card-header flex flex-row justify-between">
+        <h1 class="h6">Liste de commandes</h1>
+        <div class="flex flex-row justify-center items-center">
+          <button mat-raised-button class="font-bold btn-shadow">Ajouter Commande</button>
+        </div>
+      </div>
+      <!-- grid of products -->
+      <div class=" bg-gray-100 p-10">
+        <div class="grid grid-cols-3 gap-5 lg:grid-cols-2">
+          <div app-order [orderItem]="Item" *ngFor="let Item of (orderList| async)">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end content-->
+  </div>
+</div>

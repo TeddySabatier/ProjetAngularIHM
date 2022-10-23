@@ -1,3 +1,37 @@
-<div *ngFor="let Item of (userList| async)">
-    <app-user [userItem]="Item"> </app-user >
-</div >
+<app-navbar></app-navbar>
+<!-- strat wrapper -->
+<div class="h-screen flex flex-row flex-wrap">
+  <!-- end sidbar -->
+  <!-- start content -->
+  <div class="bg-gray-100 flex-1 p-6 md:mt-16">
+    <!-- start navbar -->
+    <div class="md:fixed md:w-full md:top-0 md:z-20 tems-center p-6 border-b border-gray-300">
+      <div class="card col-span-2 xl:col-span-1 mt-10 mb-10">
+        <div class="card-header flex flex-row justify-between">
+          <h1 class="h6">Liste des utilisateurs</h1>
+          <div class="flex flex-row justify-center items-center">
+            <button mat-raised-button class="font-bold btn-shadow">Ajouter Utilisateur</button>
+          </div>
+        </div>
+        <!-- Start Recent Sales -->
+        <div class="card col-span-2 xl:col-span-1">
+          <table class="table-auto w-full text-left">
+            <thead>
+              <tr>
+                <th class="px-4 py-2 border-r">Profil</th>
+                <th class="px-4 py-2 border-r">Nom</th>
+                <th class="px-4 py-2 border-r">Prénom</th>
+                <th class="px-4 py-2">Email</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-600">
+              <tr app-user [userItem]="Item" *ngFor="let Item of (userList| async)">
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <!--end content-->
+    </div>
+  </div>
+</div>

@@ -1,6 +1,11 @@
-<div>
-    <p>{{productItem.name}}</p>
-    <p>{{productItem.price}}</p>
-    <p class="discount" *ngIf="productItem.discount">Réduction de {{productItem.discount}}</p>
+<div class="card col-span-1">
+  <div class="card-body">
+    <div class="h-8 flex flex-row" style="justify-content: space-around;">
+      <img src={{productItem.img}} class="object-cover">
+      <p class="discount p-1" *ngIf="productItem.discount"> - {{productItem.discount}} </p>
+    </div>
+    <h1 class="capitalize text-lg mt-1 mb-1">{{productItem.name}}</h1>
+    <p class="capitalize text-xs text-gray-500">$<span>{{productItem.price}}</span></p>
+  </div>
 </div>
-<hr>
+<!-- status -->

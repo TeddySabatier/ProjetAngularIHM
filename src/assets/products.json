@@ -1,15 +1,24 @@
 [
-    {
-      "name":"Brosse à dent de luxe",
-      "price":10
-    },
-    {
-      "name":"Smartphone",
-      "price":1000
-    },
-    {
-      "name":"Ordi",
-      "price":1200,
-      "discount":"20%"
-    }
-  ]
+  {
+    "name": "Sneakers and Tennis ",
+    "price": 89,
+    "img": "../../assets/cleopatra/img/sneakers.svg"
+  },
+  {
+    "name": "Adidas Soccer Ball",
+    "price": 55,
+    "img": "../../assets/cleopatra/img/soccer.svg"
+  },
+  {
+    "name": "Crazy Socks & Graphic Socks for Men",
+    "price": 19,
+    "img": "../../assets/cleopatra/img/socks.svg",
+    "discount": "20%"
+  },
+  {
+    "name": "Best Chocolate Chip Cookies",
+    "price": 9.99,
+    "img": "../../assets/cleopatra/img/food.svg",
+    "discount": "5%"
+  }
+]

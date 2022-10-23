@@ -1,20 +1,45 @@
-<div class="column">
-    <div *ngIf="hasError" class="error">
-        Error in form validation
+<app-navbar></app-navbar>
+<!-- strat wrapper -->
+<div class="h-screen flex flex-row flex-wrap">
+  <!-- end sidbar -->
+  <!-- start content -->
+  <div class="bg-gray-100 flex-1 p-6 md:mt-16">
+    <!-- start navbar -->
+    <div class="md:fixed md:w-full md:top-0 md:z-20 tems-center p-6 border-b border-gray-300">
+      <div class="card col-span-2 xl:col-span-1 mt-10 mb-10">
+        <div class="card-header flex flex-row justify-between">
+          <h1 class="h6">Liste des utilisateurs</h1>
+        </div>
+        <!-- Start Recent Sales -->
+        <div class="card col-span-2 xl:col-span-1">
+          <div class="column">
+            <div *ngIf="hasError" class="error">
+              Error in form validation
+            </div>
+            <div *ngIf="isValid" class="valid">
+              That's a great Job
+            </div>
+            <div>
+              Login :<input type="text" [(ngModel)]="login" />
+            </div>
+            <div>
+              Password :<input type="text" [(ngModel)]="password" />
+            </div>
+            <div>
+              Confirm password :<input type="text" [(ngModel)]="confirmPassword" />
+            </div>
+            <div>
+              <button (click)="onClickValidate()"> Validate</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--end content-->
     </div>
-    <div *ngIf="isValid" class="valid">
-        That's a great Job
-    </div>
-    <div>
-        Login :<input type="text" [(ngModel)]="login"/>
-    </div>
-    <div>
-        Password :<input type="text" [(ngModel)]="password"/>
-    </div>
-    <div>
-        Confirm password :<input type="text" [(ngModel)]="confirmPassword"/>
-    </div>
-    <div>
-        <button (click)="onClickValidate()"> Validate</button>
-    </div>
+  </div>
 </div>
+
+
+
+

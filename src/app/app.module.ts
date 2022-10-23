@@ -10,21 +10,28 @@ import { FormComponent } from './form/form.component';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 import { ConfigComponent } from './config/config.component';
-import { OrderComponent } from './order/order.component';
-import { OrderListComponent } from './order-list/order-list.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
+import { OrderComponent } from './order/order.component';
+import { OrderListComponent } from './order-list/order-list.component';
+import { OrderListService } from './order-list.service';
+import { UserListService } from './user-list.service';
+import { ProductListService } from './product-list.service';
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    NavbarComponent,
     ProductListComponent,
     ProductComponent,
-    FormComponent,
-    ConfigComponent,
+    UserComponent,
+    UserListComponent,
     OrderComponent,
     OrderListComponent,
-    UserComponent,
-    UserListComponent
+    FormComponent,
+    ConfigComponent
   ],
   imports: [
     BrowserModule,

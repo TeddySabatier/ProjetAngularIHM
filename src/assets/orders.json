@@ -1,15 +1,59 @@
 [
     {"user":"Jean",
-    "productList":[
-        {"name":"Brosse à dent","price":10},
-        {"name":"Shampoing","price":110},
-        {"name":"Savon de marseille","price":50}],
-    "date":"2022-10-12"},
-    
-    {"user":"Frak",
-    "productList":[
-        {"name":"Brosse à dent","price":10},
-        {"name":"Shampoing","price":110},
-        {"name":"Savon de marseille","price":50}],
-    "date":"2022-10-12"}
+      "productList": [
+        {
+          "name": "Sneakers and Tennis ",
+          "price": 89,
+          "img": "../../assets/cleopatra/img/sneakers.svg"
+        },
+        {
+          "name": "Adidas Soccer Ball",
+          "price": 55,
+          "img": "../../assets/cleopatra/img/soccer.svg"
+        }
+      ],
+      "date": "2022-10-25"
+    },
+
+  {
+    "user": "Frank",
+    "productList": [
+      {
+        "name": "Crazy Socks & Graphic Socks for Men",
+        "price": 19,
+        "img": "../../assets/cleopatra/img/socks.svg",
+        "discount": "20%"
+      },
+      {
+        "name": "Best Chocolate Chip Cookies",
+        "price": 9.99,
+        "img": "../../assets/cleopatra/img/food.svg",
+        "discount": "5%"
+      }
+    ],
+    "date": "2022-10-22"
+  },
+
+  {
+    "user": "Camille",
+    "productList": [
+      {
+        "name": "Sneakers and Tennis ",
+        "price": 89,
+        "img": "../../assets/cleopatra/img/sneakers.svg"
+      },
+      {
+        "name": "Adidas Soccer Ball",
+        "price": 55,
+        "img": "../../assets/cleopatra/img/soccer.svg"
+      },
+      {
+        "name": "Best Chocolate Chip Cookies",
+        "price": 9.99,
+        "img": "../../assets/cleopatra/img/food.svg",
+        "discount": "5%"
+      }
+    ],
+    "date": "2022-11-02"
+  }
 ]
