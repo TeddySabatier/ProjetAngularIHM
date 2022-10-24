@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ProductComponent implements OnInit {
  
   @Input() productItem:any;
-  
+  display:Boolean=false;
   constructor() { }
 
   ngOnInit(): void {

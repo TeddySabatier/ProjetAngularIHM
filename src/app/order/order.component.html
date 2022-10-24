@@ -6,9 +6,10 @@
       </div>
       <h1 class="h6">{{orderItem.user}}</h1>
     </div>
+    <button (click)="display=!display">Show more</button>
   </div>
   <!-- grid of products -->
-  <div class=" bg-gray-100 p-10">
+  <div *ngIf="display" class=" bg-gray-100 p-10">
       <div product [productItem]="Item" *ngFor="let Item of orderItem.productList">
 
       </div>

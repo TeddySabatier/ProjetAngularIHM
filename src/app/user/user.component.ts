@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
   @Input() userItem:any;
+  display:boolean=false;
   constructor() { }
 
   ngOnInit(): void {

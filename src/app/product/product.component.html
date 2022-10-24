@@ -5,7 +5,8 @@
       <p class="discount p-1" *ngIf="productItem.discount"> - {{productItem.discount}} </p>
     </div>
     <h1 class="capitalize text-lg mt-1 mb-1">{{productItem.name}}</h1>
-    <p class="capitalize text-xs text-gray-500">$<span>{{productItem.price}}</span></p>
+    <p *ngIf="display" class="capitalize text-xs text-gray-500">$<span>{{productItem.price}}</span></p>
+    <button (click)="display=!display">Price</button>
   </div>
 </div>
 <!-- status -->

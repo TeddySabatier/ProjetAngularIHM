@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
   @Input() orderItem:any;
+  display:boolean=false;
   constructor() { }
 
   ngOnInit(): void {
