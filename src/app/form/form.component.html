@@ -12,28 +12,33 @@
         </div>
         <!-- Start Recent Sales -->
         <div class="card col-span-2 xl:col-span-1">
-          <div class="column">
-            <div *ngIf="hasError" class="error">
-              Error in form validation
-            </div>
-            <div *ngIf="isValid" class="valid">
-              That's a great Job
+          <div class="column" id="allForm">
+            <div class="column" id="formLoginPass">
+              <div *ngIf="hasError" class="error">
+                Error in form validation
+              </div>
+              <div *ngIf="isValid" class="valid">
+                That's a great Job
+              </div>
+              <div>
+                Login :<input type="text" [(ngModel)]="login" />
+              </div>
+              <div>
+                Password :<input type="text" [(ngModel)]="password" />
+              </div>
+              <div>
+                Confirm password :<input type="text" [(ngModel)]="confirmPassword" />
+              </div>
             </div>
             <div>
-              Login :<input type="text" [(ngModel)]="login" />
+              Message :<input type="text" id="messageInput" [(ngModel)]="message" />
             </div>
-            <div>
-              Password :<input type="text" [(ngModel)]="password" />
-            </div>
-            <div>
-              Confirm password :<input type="text" [(ngModel)]="confirmPassword" />
-            </div>
-            <div>
+            
               <button (click)="onClickValidate()"> Validate</button>
+          
             </div>
           </div>
 
-        </div>
       </div>
       <!--end content-->
     </div>

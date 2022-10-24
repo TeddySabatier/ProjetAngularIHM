@@ -11,3 +11,32 @@
   flex-direction: column;
   width: max-content;
 }
+input{
+  border-color: lightgray;
+  border-width: 1px;
+}
+div{
+  margin: 5px;
+}
+button{
+  border-color:darkblue;
+  border-width: 2px;
+  border-radius: 3px;
+  padding: 5px;
+}
+button:hover{
+  border-color: black;
+}
+#allForm{
+  width: 80vw;
+  align-items: center;
+  justify-items: center;
+}
+#formLoginPass div{
+  display: flex;
+  justify-content: space-between;
+}
+#messageInput{
+  width: 40vw;
+  min-height: 50px;
+}

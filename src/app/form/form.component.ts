@@ -12,13 +12,13 @@ export class FormComponent implements OnInit {
   login:String="";
   password:String="";
   confirmPassword:String="";
-
+  message:String="";
   constructor(private logger:LoggerService) { }
 
   ngOnInit(): void {
   }
   onClickValidate():void{
-    if(this.password==this.confirmPassword && this.password.length>8){
+    if(this.password==this.confirmPassword && this.password.length>8 && this.message!=""){
       this.isValid=true;
       this.hasError=false;
     }
